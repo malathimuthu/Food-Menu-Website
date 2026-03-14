@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Food Website</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>🍔 My Food Menu</h1>
+
+<a href="login.html">
+<button>Login</button>
+</a>
+
+<br><br>
+
+<input type="text" id="search" placeholder="Search food..." onkeyup="searchFood()">
+
+<br><br>
+
+Cart: <span id="cart">0</span> | Total ₹<span id="total">0</span>
+
+<br><br>
+
+<a href="cart.html">
+<button>View Cart</button>
+</a>
+
+<br><br>
+
+<div class="foods">
+
+<div class="card" data-name="pizza">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" width="150">
+
+<h2>Pizza</h2>
+
+<p>Price ₹199</p>
+
+<button onclick="addCart(199)">Add</button>
+<button onclick="removeCart(199)">Remove</button>
+
+</div>
+
+
+<div class="card" data-name="burger">
+
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349" width="150">
+
+<h2>Burger</h2>
+
+<p>Price ₹99</p>
+
+<button onclick="addCart(99)">Add</button>
+<button onclick="removeCart(99)">Remove</button>
+
+</div>
+
+
+<div class="card" data-name="chicken">
+
+<img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58" width="150">
+
+<h2>Fried Chicken</h2>
+
+<p>Price ₹149</p>
+
+<button onclick="addCart(149)">Add</button>
+<button onclick="removeCart(149)">Remove</button>
+
+</div>
+
+
+<div class="card" data-name="noodles">
+
+<img src="https://images.unsplash.com/photo-1585032226651-759b368d7246" width="150">
+
+<h2>Noodles</h2>
+
+<p>Price ₹129</p>
+
+<button onclick="addCart(129)">Add</button>
+<button onclick="removeCart(129)">Remove</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
